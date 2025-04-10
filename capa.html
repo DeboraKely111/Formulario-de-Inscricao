@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>capa</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="estilo1.css">
+</head>
+<body>
+    <ID>
+        <div class="imagem">
+            <img src="image.png" alt="imagepng"><br> 
+        </div>
+
+        <!-- Campos para ID do Aluno e Senha -->
+        <div id="mensagem-usuario" class="mensagem-usuario" style="display: none;"></div>
+       <for="idAluno">ID do Usuário:</label>
+      <input type="text" id="idUsuario" name="idUsuario" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00"></p>
+   <label for="senha">Senha:</label>
+     <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required></p>
+        <section>
+            <a href="index.html">
+                <button onclick="salvarDados()"><strong>ENTRAR</strong></button>
+            </a>
+        </section>
+    </main>
+
+
+    <!-- Script para salvar ID e Senha -->
+    <script>
+        function salvarDados() {
+            const idAluno = document.getElementById("idAluno").value;
+            const senhaAluno = document.getElementById("senhaAluno").value;
+
+            if (idAluno.trim() === "" || senhaAluno.trim() === "") {
+                alert("Por favor, preencha o ID e a senha antes de prosseguir.");
+            } else {
+                localStorage.setItem("idAluno", idAluno);
+                localStorage.setItem("senhaAluno", senhaAluno);
+            }
+        }
+    </script>
+</body>
+</html> 
