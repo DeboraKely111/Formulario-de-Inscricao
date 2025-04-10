@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Capa</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <main>
+        <div class="imagem">
+        <img src="image.png" alt="imagepng"><br> 
+        <img src="tinova.jpg" alt="tinovajpg">             
+        <section>
+    
+                    <a href="index.html">
+                    <button onclick=""><strong>REALIZAR INSCRIÇÃO</strong></button>
+                    </a>
+                
+            </section>
+
+    </main>
+</body>
+</html>   
